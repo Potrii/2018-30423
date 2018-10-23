@@ -34,5 +34,13 @@ public class ParkingSlotTest {
 		Assert.assertFalse(firstCarParkingSlot == secondCarParkingSlot);
 
 		Assert.assertFalse(firstCarParkingSlot.equals(secondCarParkingSlot));
+
+		ParkingSlot[] parkingSlots = new ParkingSlot[20];
+
+		for (int i = 0; i < parkingSlots.length; i++) {
+			if (parkingSlots[i] instanceof BusParkingSlot) {
+				((BusParkingSlot) parkingSlots[i]).busOnlyMethod();
+			}
+		}
 	}
 }
