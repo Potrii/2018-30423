@@ -1,4 +1,4 @@
-package lab05;
+package lab04;
 
 import org.junit.Assert;
 import org.junit.Test;
